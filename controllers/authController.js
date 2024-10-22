@@ -30,7 +30,7 @@ const register = async (req, res) => {
         res.status(500).json({
             success: false,
             token: null,
-            message: 'Registration Failed'
+            message: 'Registration Failed',
             error: 'Error registering user'
         });
     }

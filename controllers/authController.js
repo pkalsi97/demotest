@@ -22,7 +22,7 @@ const register = async (req, res) => {
         res.status(201).json({
             success: true,
             token: null,  // No token on registration
-            error: null,
+            error: "none",
             message: 'User registered successfully'
         });
     } catch (error) {
@@ -30,6 +30,7 @@ const register = async (req, res) => {
         res.status(500).json({
             success: false,
             token: null,
+            message: 'Registration Failed'
             error: 'Error registering user'
         });
     }
